@@ -1,8 +1,10 @@
 
 /* Estilos globais */
 body {
-    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
     font-family: 'Borel', cursive;
+    background-color: #F3C3CE;
 }
 
 /* Estilos do cabeçalho */
