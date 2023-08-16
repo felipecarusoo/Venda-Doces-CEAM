@@ -1,0 +1,37 @@
+/* styles/styles.css */
+
+/* Estilos comuns */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos específicos para a página index.html */
+.index-container {
+    /* Estilos para a página index.html */
+}
+
+/* Estilos específicos para a página pedido.html */
+.pedido-container {
+    /* Estilos para a página pedido.html */
+}
+
+/* Estilos específicos para a página avaliacao.html */
+.avaliacao-container {
+    /* Estilos para a página avaliacao.html */
+}
