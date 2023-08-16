@@ -71,7 +71,7 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease;
     z-index: 1;
-    width: 40%; /* Reduzi o tamanho do ícone */
+    width: 40%; 
 }
 
 .Box:hover .icone {
