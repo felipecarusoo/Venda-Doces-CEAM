@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação do Produto</title>
+</head>
+<body>
+    <h1>Avalie seu Produto</h1>
+    <form action="processar_avaliacao.php" method="post">
+        <label for="produto">Produto Avaliado:</label>
+        <select name="produto" id="produto">
+            <!-- Opções de produtos aqui -->
+        </select>
+        <label for="avaliacao">Avaliação:</label>
+        <input type="number" name="avaliacao" id="avaliacao" min="1" max="5">
+        <label for="comentario">Comentário:</label>
+        <textarea name="comentario" id="comentario" rows="4"></textarea>
+        <button type="submit">Enviar Avaliação</button>
+    </form>
+</body>
+</html>
