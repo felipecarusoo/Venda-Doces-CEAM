@@ -1,24 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/styles.css">
-    <title>Avaliação do Produto</title>
+    <title>Avaliar Produtos</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="pedido.html">Pedidos</a>
+        <a href="avaliacao.html">Avaliações</a>
+    </div>
+
     <h1>Avalie seu Produto</h1>
-    <form action="processar_avaliacao.php" method="post">
-        <label for="produto">Produto Avaliado:</label>
-        <select name="produto" id="produto">
-            <!-- Opções de produtos aqui -->
-        </select>
-        <label for="avaliacao">Avaliação:</label>
-        <input type="number" name="avaliacao" id="avaliacao" min="1" max="5">
-        <label for="comentario">Comentário:</label>
-        <textarea name="comentario" id="comentario" rows="4"></textarea>
-        <button type="submit">Enviar Avaliação</button>
-    </form>
+    <!-- Restante do conteúdo da página -->
+
 </body>
 </html>

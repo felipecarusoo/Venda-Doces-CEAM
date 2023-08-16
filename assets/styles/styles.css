@@ -1,38 +1,26 @@
-/* styles/styles.css */
+/* assets/styles/styles.css */
 
-/* Estilos comuns */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+/* ... (seus estilos comuns) */
+
+/* Estilos para a navegação */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
-h1, h2 {
-    color: #333;
-}
-
-a {
-    color: #007bff;
+.navbar a {
+    color: #fff;
     text-decoration: none;
+    margin: 0 10px;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Estilos para a mensagem de agradecimento */
+.thank-you-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #007bff;
 }
-
-/* Estilos específicos para a página index.html */
-.index-container {
-    /* Estilos para a página index.html */
-}
-
-/* Estilos específicos para a página pedido.html */
-.pedido-container {
-    /* Estilos para a página pedido.html */
-}
-
-/* Estilos específicos para a página avaliacao.html */
-.avaliacao-container {
-    /* Estilos para a página avaliacao.html */
-}
-
