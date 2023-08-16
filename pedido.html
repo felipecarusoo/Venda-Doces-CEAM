@@ -14,12 +14,34 @@
     </div>
 
     <h1>Seu Carrinho de Compras</h1>
-    <!-- Restante do conteúdo da página -->
 
-    <!-- Adicione essa parte após o pedido ser feito -->
-    <div class="thank-you-message">
+    <form id="pedido-form">
+        <label for="produto">Selecione o Produto:</label>
+        <select name="produto" id="produto">
+            <option value="brigadeiro">Brigadeiro</option>
+            <option value="cupcake">Cupcake</option>
+            <option value="brownie">Brownie</option>
+        </select>
+
+        <button type="button" id="submit-button">Fazer Pedido</button>
+    </form>
+
+    <div class="thank-you-message" id="thank-you-message">
         Obrigado por fazer seu pedido! Sua encomenda será preparada em breve.
     </div>
 
+    <script>
+        const submitButton = document.getElementById('submit-button');
+        const thankYouMessage = document.getElementById('thank-you-message');
+        const pedidoForm = document.getElementById('pedido-form');
+
+        submitButton.addEventListener('click', () => {
+            // Simula o envio do pedido
+            setTimeout(() => {
+                pedidoForm.style.display = 'none';
+                thankYouMessage.style.display = 'block';
+            }, 1000); // Tempo de simulação em milissegundos (1 segundo)
+        });
+    </script>
 </body>
 </html>
