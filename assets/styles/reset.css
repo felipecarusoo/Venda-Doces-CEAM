@@ -1,0 +1,30 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li, form, label, input, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+input, button, textarea {
+    outline: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
