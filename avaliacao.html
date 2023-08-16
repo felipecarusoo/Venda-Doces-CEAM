@@ -23,8 +23,16 @@
             <option value="brownie">Brownie</option>
         </select>
 
-        <label for="avaliacao">Avaliação:</label>
-        <input type="number" name="avaliacao" id="avaliacao" min="1" max="5">
+        <label>Avaliação:</label>
+        <div class="rating-buttons">
+            <button type="button" class="rating-button" value="1">1</button>
+            <button type="button" class="rating-button" value="2">2</button>
+            <button type="button" class="rating-button" value="3">3</button>
+            <button type="button" class="rating-button" value="4">4</button>
+            <button type="button" class="rating-button" value="5">5</button>
+        </div>
+
+        <input type="hidden" name="avaliacao" id="avaliacao" value="">
 
         <label for="comentario">Comentário:</label>
         <textarea name="comentario" id="comentario" rows="4"></textarea>
@@ -32,5 +40,17 @@
         <button type="submit">Enviar Avaliação</button>
     </form>
 
+    <script>
+        const ratingButtons = document.querySelectorAll('.rating-button');
+        const hiddenAvaliacao = document.getElementById('avaliacao');
+
+        ratingButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                hiddenAvaliacao.value = button.value;
+                ratingButtons.forEach(btn => btn.classList.remove('selected'));
+                button.classList.add('selected');
+            });
+        });
+    </script>
 </body>
 </html>
