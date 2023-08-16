@@ -14,7 +14,23 @@
     </div>
 
     <h1>Avalie seu Produto</h1>
-    <!-- Restante do conteúdo da página -->
+
+    <form action="processar_avaliacao.php" method="post">
+        <label for="produto">Selecione o Produto:</label>
+        <select name="produto" id="produto">
+            <option value="brigadeiro">Brigadeiro</option>
+            <option value="cupcake">Cupcake</option>
+            <option value="brownie">Brownie</option>
+        </select>
+
+        <label for="avaliacao">Avaliação:</label>
+        <input type="number" name="avaliacao" id="avaliacao" min="1" max="5">
+
+        <label for="comentario">Comentário:</label>
+        <textarea name="comentario" id="comentario" rows="4"></textarea>
+
+        <button type="submit">Enviar Avaliação</button>
+    </form>
 
 </body>
 </html>
