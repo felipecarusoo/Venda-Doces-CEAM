@@ -25,6 +25,12 @@ body {
     display: flex;
 }
 
+.titulo {
+    text-align: center;
+    font-size: 36px;
+    margin: 40px 0;
+}
+
 .lista-cabecalho li a {
     font-size: 16px;
     color: white;
