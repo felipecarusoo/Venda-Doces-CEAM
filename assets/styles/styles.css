@@ -48,19 +48,13 @@ body {
 }
 
 .Box {
-    position: relative;
-    width: 250px;
-    height: 350px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
+    /* ... Outros estilos ... */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .Box:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .ImgBox img {
@@ -75,12 +69,14 @@ body {
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-	width: 50%;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+    z-index: 1;
+    width: 40%; /* Reduzi o tamanho do ícone */
 }
 
 .Box:hover .icone {
     opacity: 1;
+    transform: translate(-50%, -10px);
     transition-delay: 0.2s;
 }
 
