@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #E23E57; /* Tom mais escuro de vermelho */
+    background-image: linear-gradient(45deg, #FF7E91, #E23E57);
     color: white;
     padding: 10px 20px;
 }
@@ -31,7 +31,7 @@ body {
     text-align: center;
     font-size: 36px;
     margin: 40px 0;
-    color: #E23E57; /* Cor do título */
+    color: whitesmoke; /* Cor do título */
 }
 
 .lista-cabecalho li a {
@@ -91,7 +91,7 @@ body {
 
 /* Estilos do rodapé */
 footer {
-    background-image: linear-gradient(45deg, #E23E57, #FF7E91); /* Gradiente de tons de vermelho */
+    background-image: linear-gradient(45deg, #FF7E91, #E23E57); /* Gradiente de tons de vermelho */
     padding: 20px 0;
     text-align: center;
     color: white;
