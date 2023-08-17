@@ -2,6 +2,7 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-color: #FFD9DD;
 }
@@ -17,8 +18,8 @@ body {
 }
 
 .cabecalho-imagem {
-    width: 75px; 
-    height: 65px;
+    width: 60px; 
+    height: 50px;
 }
 
 .cabecalho-nav ul {
@@ -26,33 +27,24 @@ body {
     font-size: 14px;
     display: flex;
     align-items: center;
-    margin: 0;
-    padding: 0;
+
 }
 
 main {
     padding: 80px 0 135px 0;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 100px 0;
-}
-
 .titulo {
     text-align: center;
-    font-size: 28px;
-    margin: 40px 0;
+    font-size: 24px;
+    margin: 20px 0;
     color: white;
     font-weight: bold;
 }
 
 .titulo-container {
     text-align: center;
-    font-size: 36px;
+    font-size: 28px;
     margin: 40px 0;
     color: #99004C;
     font-weight: bold;
@@ -91,7 +83,7 @@ main {
 }
 
 .ImgBox img {
-    width: 100%;
+    width: 300px;
     height: 80%;
     object-fit: cover;
 }
@@ -125,16 +117,6 @@ footer {
     font-size: 16px;
     color: white;
     font-style: italic;
-}
-
-.thank-you-message, form {
-    margin: 20px 10px 20px 40px;
-}
-
-form button {
-    background-color: #ff99ff;
-    color: #99004C;
-    border: 1px solid #99004C;
 }
 
 @media screen and (max-width: 768px){
