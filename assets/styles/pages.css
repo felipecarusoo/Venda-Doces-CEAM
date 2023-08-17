@@ -16,6 +16,8 @@
 .cabecalho-nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .titulo {
@@ -70,7 +72,7 @@
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease;
     z-index: 1;
-    width: 30%; 
+    width: 30%;
 }
 
 .Box:hover .icone {
