@@ -17,19 +17,19 @@ body {
 }
 
 .cabecalho-imagem {
-    width: 80px;
-    height: auto;
+    display: flex;
+    align-items: center;
 }
 
-.cabecalho-nav ul {
-    list-style: none;
-    display: flex;
+.cabecalho-imagem img {
+    width: 80px;
+    height: auto;
 }
 
 .titulo {
     text-align: center;
     font-size: 36px;
-    margin: 40px 0;
+    margin: 0;
 }
 
 .lista-cabecalho li a {
