@@ -91,7 +91,7 @@ body {
 
 /* Estilos do rodapé */
 footer {
-    background-color: #D1213A; /* Tom mais escuro de vermelho */
+    background-image: linear-gradient(45deg, #E23E57, #FF7E91); /* Gradiente de tons de vermelho */
     padding: 20px 0;
     text-align: center;
     color: white;
@@ -109,5 +109,5 @@ footer {
 }
 
 .rodape a:hover {
-    color: #FF7E91; /* Tom mais claro de vermelho no hover */
+    color: #FDF3F4; /* Tom mais claro de vermelho no hover */
 }
