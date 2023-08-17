@@ -23,6 +23,7 @@ body {
 
 .cabecalho-nav ul {
     list-style: none;
+	font-size: 36px;
     display: flex;
 }
 
