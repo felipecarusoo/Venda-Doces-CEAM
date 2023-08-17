@@ -123,6 +123,11 @@ footer {
     .cabecalho-nav {
         display: none;
     }
+
+    .cabecalho-imagem {
+        width: 50px;
+        height: 40px;
+    }
 }
 
 

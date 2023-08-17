@@ -1,7 +1,7 @@
 .menu-div {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .nav-button {
@@ -13,8 +13,7 @@
 }
 
 .nav-button i {
-    color: var(--color-btn);
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .overlay {
@@ -60,6 +59,10 @@
 @media screen and (max-width: 768px){
     .nav-button {
         display: block;
+    }
+
+    .menu-div {
+        flex-direction: row-reverse;
     }
 }
 
