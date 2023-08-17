@@ -24,12 +24,16 @@ body {
 .cabecalho-imagem img {
     width: 80px;
     height: auto;
+
+.cabecalho-nav ul {
+    list-style: none;
+    display: flex;
 }
 
 .titulo {
     text-align: center;
     font-size: 36px;
-    margin: 0;
+    margin: 40px 0;
 }
 
 .lista-cabecalho li a {
