@@ -21,10 +21,6 @@ body {
 	height: left;
 }
 
-h1 {
-	text-align: center;
-}
-
 .cabecalho-nav ul {
     list-style: none;
     display: flex;
