@@ -9,7 +9,7 @@ body {
 /* Estilos do cabeçalho */
 .cabecalho {
     display: flex;
-    align-items: justify;
+    align-items: center;
     justify-content: space-between;
     background-color: #34495e;
     color: white;
@@ -18,13 +18,11 @@ body {
 
 .cabecalho-imagem {
     display: 80px;
-	height: auto;
+	height: left;
 }
 
-.cabecalho-imagem img {
-    width: 80px;
-    height: auto;
-	align-items: left;
+h1 {
+	text-align: center;
 }
 
 .cabecalho-nav ul {
