@@ -71,6 +71,10 @@ body {
     object-fit: cover;
 }
 
+.textolink {
+	font-size: 20px;
+}
+
 .icone {
     position: absolute;
     bottom: 20px;
