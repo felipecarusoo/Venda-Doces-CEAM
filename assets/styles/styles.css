@@ -101,14 +101,5 @@ footer {
 .rodape p {
     margin-bottom: 10px;
 	font-size: 28px;
-}
-
-.rodape a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.rodape a:hover {
-    color: #FDF3F4; /* Tom mais claro de vermelho no hover */
+	color: white
 }
