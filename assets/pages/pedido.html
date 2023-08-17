@@ -8,46 +8,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/style.css">
     <title>Vendinha do Amálio</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 </head>
 
 <body>
     <header class="cabecalho">
-        <div class="cabecalho-imagem">
-            <img src="assets/img/seedpr.png" alt="seedpr">
-        </div>
+        <img src="../img/seedpr.png" alt="seedpr" class="cabecalho-imagem">
 
-        <div>
-            <h1 class="titulo">Loja de Doces Colégio Estadual Prof. Amálio Pinheiro</h1>
-        </div>
+         <h1 class="titulo">Loja de Doces</h1>
 
         <nav class="cabecalho-nav">
             <ul class="lista-cabecalho">
-                <li><a href="https://felipecarusoo.github.io/feiraVendaDoceEmpreendedorismo/">INÍCIO</a></li>
-                <li class="none"><a href="https://felipecarusoo.github.io/feiraVendaDoceEmpreendedorismo/assets/pages/pedido.html">PEDIDOS</a></li>
-                <li><a href="https://felipecarusoo.github.io/feiraVendaDoceEmpreendedorismo/assets/pages/avaliacao.html">AVALIAÇÃO</a></li>
+                <li><a href="../../index.html">INÍCIO</a></li>
+                <li class="none"><a href="pedido.html">PEDIDOS</a></li>
+                <li><a href="avaliacao.html">AVALIAÇÃO</a></li>
             </ul>
         </nav>
     </header>
+    <div class="main">
+        <h1 class="titulo-container">Seu Carrinho de Compras</h1>
 
-    <h1>Seu Carrinho de Compras</h1>
+        <form id="pedido-form">
+            <label for="produto">Selecione o Produto:</label>
+            <select name="produto" id="produto">
+                <option value="brigadeiro">Brigadeiro</option>
+                <option value="cupcake">Cupcake</option>
+                <option value="brownie">Brownie</option>
+            </select>
 
-    <form id="pedido-form">
-        <label for="produto">Selecione o Produto:</label>
-        <select name="produto" id="produto">
-            <option value="brigadeiro">Brigadeiro</option>
-            <option value="cupcake">Cupcake</option>
-            <option value="brownie">Brownie</option>
-        </select>
+            <button type="button" id="submit-button">Fazer Pedido</button>
+        </form>
 
-        <button type="button" id="submit-button">Fazer Pedido</button>
-    </form>
-
-    <div class="thank-you-message" id="thank-you-message">
-        Obrigado por fazer seu pedido! Sua encomenda será preparada em breve.
+        <p class="thank-you-message" id="thank-you-message">Obrigado por fazer seu pedido! Sua encomenda será preparada em breve.</p>
     </div>
-
     <script>
         const submitButton = document.getElementById('submit-button');
         const thankYouMessage = document.getElementById('thank-you-message');

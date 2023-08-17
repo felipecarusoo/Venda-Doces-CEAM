@@ -8,55 +8,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <title>Vendinha do Amálio</title>
 </head>
 
 <body>
     <header class="cabecalho">
-        <div class="cabecalho-imagem">
-            <img src="assets/img/seedpr.png" alt="seedpr">
-        </div>
+        <img src="../img/seedpr.png" alt="seedpr" class="cabecalho-imagem">
 
         <div>
-            <h1 class="titulo">Loja de Doces Colégio Estadual Prof. Amálio Pinheiro</h1>
+            <h1 class="titulo">Loja de Doces</h1>
         </div>
 
         <nav class="cabecalho-nav">
             <ul class="lista-cabecalho">
-                <li><a href="https://felipecarusoo.github.io/feiraVendaDoceEmpreendedorismo/">INÍCIO</a></li>
-                <li class="none"><a href="https://felipecarusoo.github.io/feiraVendaDoceEmpreendedorismo/assets/pages/pedido.html">PEDIDOS</a></li>
-                <li><a href="https://felipecarusoo.github.io/feiraVendaDoceEmpreendedorismo/assets/pages/avaliacao.html">AVALIAÇÃO</a></li>
+                <li><a href="../../index.html">INÍCIO</a></li>
+                <li class="none"><a href="pedido.html">PEDIDOS</a></li>
+                <li><a href="avaliacao.html">AVALIAÇÃO</a></li>
             </ul>
         </nav>
     </header>
-    
-    <h1>Avalie seu Produto</h1>
+    <main class="main">
+        <h1 class="titulo-container">Avalie seu Produto</h1>
 
-    <form action="processar_avaliacao.php" method="post">
-        <label for="produto">Selecione o Produto:</label>
-        <select name="produto" id="produto">
-            <option value="brigadeiro">Brigadeiro</option>
-            <option value="cupcake">Cupcake</option>
-            <option value="brownie">Brownie</option>
-        </select>
+        <form action="processar_avaliacao.php" method="post">
+            <label for="produto">Selecione o Produto:</label>
+            <select name="produto" id="produto">
+                <option value="brigadeiro">Brigadeiro</option>
+                <option value="cupcake">Cupcake</option>
+                <option value="brownie">Brownie</option>
+            </select>
 
-        <label>Avaliação:</label>
-        <div class="rating-buttons">
-            <button type="button" class="rating-button" value="1">1</button>
-            <button type="button" class="rating-button" value="2">2</button>
-            <button type="button" class="rating-button" value="3">3</button>
-            <button type="button" class="rating-button" value="4">4</button>
-            <button type="button" class="rating-button" value="5">5</button>
-        </div>
+            <label>Avaliação:</label>
+            <div class="rating-buttons">
+                <button type="button" class="rating-button" value="1">1</button>
+                <button type="button" class="rating-button" value="2">2</button>
+                <button type="button" class="rating-button" value="3">3</button>
+                <button type="button" class="rating-button" value="4">4</button>
+                <button type="button" class="rating-button" value="5">5</button>
+            </div>
 
-        <input type="hidden" name="avaliacao" id="avaliacao" value="">
+            <input type="hidden" name="avaliacao" id="avaliacao" value="">
 
-        <label for="comentario">Comentário:</label>
-        <textarea name="comentario" id="comentario" rows="4"></textarea>
+            <label for="comentario">Comentário:</label>
+            <textarea name="comentario" id="comentario" rows="4"></textarea>
 
-        <button type="submit">Enviar Avaliação</button>
-    </form>
+            <button type="submit">Enviar Avaliação</button>
+        </form>
+    </main>
 
     <script>
         const ratingButtons = document.querySelectorAll('.rating-button');
