@@ -9,12 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">    
     <link rel="stylesheet" type="text/css" href="../styles/avaliacao.css">
+    <link rel="stylesheet" href="../styles/menu.css">
     <title>Vendinha do Amálio</title>
 </head>
 
 <body>
     <header class="cabecalho">
-        <img src="../img/seedpr.png" alt="seedpr" class="cabecalho-imagem">
+        <div class="menu-div">
+            <img src="../img/seedpr.png" alt="seedpr" class="cabecalho-imagem">
+            <button class="nav-button" onclick="openNav()">
+                <i class="fa-solid fa-bars fa-2x" tabindex="7"></i>
+            </button>
+        </div>
 
         <div>
             <h1 class="titulo">Loja de Doces</h1>
@@ -28,6 +34,14 @@
             </ul>
         </nav>
     </header>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="../../index.html" onclick="closeNav()">Início</a>
+            <a href="pedido.html" onclick="closeNav()">Pedidos</a>
+            <a href="avaliacao.html" onclick="closeNav()">Avaliação</a>
+        </div>
+    </div>
     <main class="main">
         <h1 class="titulo-container">Avalie seu Produto</h1>
 
@@ -57,6 +71,7 @@
         </form>
     </main>
 
+    <script src="../js/menu.js"></script>
     <script>
         const ratingButtons = document.querySelectorAll('.rating-button');
         const hiddenAvaliacao = document.getElementById('avaliacao');

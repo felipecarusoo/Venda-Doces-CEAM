@@ -10,17 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/menu.css">
     <title>Vendinha do Amálio</title>
 </head> 
 
 <body>
     <header class="cabecalho">
-        <img src="assets/img/seedpr.png" alt="seedpr"  class="cabecalho-imagem">
-
+        <div class="menu-div">
+            <img src="assets/img/seedpr.png" alt="seedpr"  class="cabecalho-imagem">
+            <button class="nav-button" onclick="openNav()">
+                <i class="fa-solid fa-bars fa-2x" tabindex="7"></i>
+            </button>
+        </div>
 
         <h1 class="titulo">Loja de Doces</h1>
         
-
         <nav class="cabecalho-nav">
             <ul class="lista-cabecalho">
                 <li><a href="index.html">INÍCIO</a></li>
@@ -29,6 +33,14 @@
             </ul>
         </nav>
     </header>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html" onclick="closeNav()">Início</a>
+            <a href="assets/pages/pedido.html" onclick="closeNav()">Pedidos</a>
+            <a href="assets/pages/avaliacao.html" onclick="closeNav()">Avaliação</a>
+        </div>
+    </div>
     <main>
         <h1 class="titulo-container">Conheça nossas receitas</h1>
 
@@ -65,5 +77,7 @@
     <footer class="rodape">
         <p>Que a nossa doçura seja contagiante!</p>
     </footer>
+
+    <script src="assets/js/menu.js"></script>
 </body>
 </html>
