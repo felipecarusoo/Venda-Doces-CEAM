@@ -28,7 +28,7 @@
 
         <nav class="cabecalho-nav">
             <ul class="lista-cabecalho">
-                <li><a href="../../index.html">INÍCIO</a></li>
+                <li><a href="../../index.html">RECEITAS</a></li>
                 <li class="none"><a href="pedido.html">PEDIDOS</a></li>
                 <li><a href="avaliacao.html">AVALIAÇÃO</a></li>
             </ul>
@@ -37,7 +37,7 @@
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="../../index.html" onclick="closeNav()">Início</a>
+            <a href="../../index.html" onclick="closeNav()">Receitas</a>
             <a href="pedido.html" onclick="closeNav()">Pedidos</a>
             <a href="avaliacao.html" onclick="closeNav()">Avaliação</a>
         </div>
@@ -45,44 +45,53 @@
     <main class="main">
         <h1 class="titulo-container">Avalie seu Produto</h1>
 
-        <form action="processar_avaliacao.php" method="post">
-            <label for="produto">Selecione o Produto:</label>
-            <select name="produto" id="produto">
-                <option value="brigadeiro">Brigadeiro</option>
-                <option value="cupcake">Cupcake</option>
-                <option value="brownie">Brownie</option>
-            </select>
+        <form action="https://formsubmit.co/lojadedocesamaliopinheiro@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_autoresponse" value="Agradecemos sua avaliação!">
+            <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
 
-            <label>Avaliação:</label>
+            <label for="name">Seu nome:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Seu email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="produto">Selecione o Produto:</label>
+            <div class="div-produto-avaliacao">
+                <button type="button" class="btn-produto-avaliacao" id="botao1" value="brigadeiro">
+                    <img src="../img/brigadeiro-btn.png" alt="" class="img-produto-avaliacao">
+                </button>
+                <button type="button" class="btn-produto-avaliacao" id="botao2">
+                    <img src="../img/cupcake-btn.png" alt="" class="img-produto-avaliacao">
+                </button>
+                <button type="button" class="btn-produto-avaliacao" id="botao3">
+                    <img src="../img/brownie-btn.png" alt="" class="img-produto-avaliacao">
+                </button>
+            </div>
+
+            <label for="produto">Produto:</label>
+            <input type="text" name="produto" id="produto">
+
+            <p>Avaliação:</p>
             <div class="rating-buttons">
-                <button type="button" class="rating-button" value="1">1</button>
-                <button type="button" class="rating-button" value="2">2</button>
-                <button type="button" class="rating-button" value="3">3</button>
-                <button type="button" class="rating-button" value="4">4</button>
-                <button type="button" class="rating-button" value="5">5</button>
+                <button type="button" class="rating-button" value="1" id="1">1</button>
+                <button type="button" class="rating-button" value="2" id="2">2</button>
+                <button type="button" class="rating-button" value="3" id="3">3</button>
+                <button type="button" class="rating-button" value="4" id="4">4</button>
+                <button type="button" class="rating-button" value="5" id="5">5</button>
             </div>
 
             <input type="hidden" name="avaliacao" id="avaliacao" value="">
 
             <label for="comentario">Comentário:</label>
-            <textarea name="comentario" id="comentario" rows="4"></textarea>
+            <textarea name="message" id="message" rows="4" required></textarea>
 
-            <button type="submit">Enviar Avaliação</button>
+
+            <button type="submit" class="btn-submit">Enviar Avaliação</button>
         </form>
     </main>
 
     <script src="../js/menu.js"></script>
-    <script>
-        const ratingButtons = document.querySelectorAll('.rating-button');
-        const hiddenAvaliacao = document.getElementById('avaliacao');
-
-        ratingButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                hiddenAvaliacao.value = button.value;
-                ratingButtons.forEach(btn => btn.classList.remove('selected'));
-                button.classList.add('selected');
-            });
-        });
-    </script>
+    <script src="../js/avaliacao.js"></script>
 </body>
 </html>
