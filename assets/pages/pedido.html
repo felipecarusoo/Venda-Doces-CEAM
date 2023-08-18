@@ -26,7 +26,7 @@
 
         <nav class="cabecalho-nav">
             <ul class="lista-cabecalho">
-                <li><a href="../../index.html">INÍCIO</a></li>
+                <li><a href="../../index.html">RECEITAS</a></li>
                 <li class="none"><a href="pedido.html">PEDIDOS</a></li>
                 <li><a href="avaliacao.html">AVALIAÇÃO</a></li>
             </ul>
@@ -35,40 +35,46 @@
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="../../index.html" onclick="closeNav()">Início</a>
+            <a href="../../index.html" onclick="closeNav()">Receitas</a>
             <a href="pedido.html" onclick="closeNav()">Pedidos</a>
             <a href="avaliacao.html" onclick="closeNav()">Avaliação</a>
         </div>
     </div>
     <div class="main">
-        <h1 class="titulo-container">Seu Carrinho de Compras</h1>
+        <h1 class="titulo-container">Carrinho de Compras</h1>
 
-        <form id="pedido-form">
+        <form action="https://formsubmit.co/lojadedocesamaliopinheiro@gmail.com" method="POST" id="pedido-form">
+            <input type="hidden" name="_captcha" value="false">
+
+            <label for="name">Seu nome:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Seu email:</label>
+            <input type="email" name="email" id="email" required>
+
             <label for="produto">Selecione o Produto:</label>
-            <select name="produto" id="produto">
-                <option value="brigadeiro">Brigadeiro</option>
-                <option value="cupcake">Cupcake</option>
-                <option value="brownie">Brownie</option>
-            </select>
+            <div class="div-produto-avaliacao">
+                <button type="button" class="btn-produto-avaliacao" id="botao1" value="brigadeiro">
+                    <img src="../img/brigadeiro-btn.png" alt="" class="img-produto-avaliacao">
+                </button>
+                <button type="button" class="btn-produto-avaliacao" id="botao2">
+                    <img src="../img/cupcake-btn.png" alt="" class="img-produto-avaliacao">
+                </button>
+                <button type="button" class="btn-produto-avaliacao" id="botao3">
+                    <img src="../img/brownie-btn.png" alt="" class="img-produto-avaliacao">
+                </button>
+            </div>
+        
+            <label for="pedido">Carrinho:</label>
+            <textarea name="message" id="pedido" rows="4" required></textarea>
 
-            <button type="button" id="submit-button">Fazer Pedido</button>
+            <label for="total">Valor Total:</label>
+            <input type="text" name="total" id="total" readonly>
+
+            <button type="submit" class="btn-submit">Enviar Pedido</button>
         </form>
-
-        <p class="thank-you-message" id="thank-you-message">Obrigado por fazer seu pedido! Sua encomenda será preparada em breve.</p>
     </div>
     <script src="../js/menu.js"></script>
-    <script>
-        const submitButton = document.getElementById('submit-button');
-        const thankYouMessage = document.getElementById('thank-you-message');
-        const pedidoForm = document.getElementById('pedido-form');
-
-        submitButton.addEventListener('click', () => {
-            // Simula o envio do pedido
-            setTimeout(() => {
-                pedidoForm.style.display = 'none';
-                thankYouMessage.style.display = 'block';
-            }, 1000); // Tempo de simulação em milissegundos (1 segundo)
-        });
-    </script>
+    <script src="../js/pedidos.js"></script>
 </body>
 </html>

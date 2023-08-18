@@ -30,6 +30,7 @@ body {
 
 }
 
+
 .main {
     display: flex;
     flex-direction: column;
@@ -67,8 +68,26 @@ body {
     background-color: #D1213A;
 }
 
-.thank-you-message, form {
-    margin: 20px 10px 20px 40px;
+form {
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+form .btn-produto-avaliacao, form input {
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 378px;
+    height: 20px;
+}
+
+form textarea {
+    width: 378px;
+    height: 100px;
 }
 
 form button {
@@ -77,8 +96,33 @@ form button {
     border: 1px solid #99004C;
 }
 
+form button:hover {
+    transition: .2s ease-in;
+    background-color: #99004C;
+    color: #FF7E91;
+}
+
+.btn-submit {
+    width: 385px;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.div-produto-avaliacao {
+    display: flex;
+    gap: 20px;
+}
+
+.img-produto-avaliacao {
+    width: 100px;
+    height: 100px;
+}
+
 @media screen and (max-width: 768px){
     .cabecalho-nav {
+        display: none;
+    }
+
+    .cabecalho-imagem {
         display: none;
     }
 }
@@ -105,5 +149,14 @@ form button {
 
     .titulo-container {
         font-size: 22px;
+    }
+
+    form, form input, .btn-submit, form textarea {
+        width: 280px;
+    }
+
+    .img-produto-avaliacao {
+        width: 65px;
+        height: 65px;
     }
 }
