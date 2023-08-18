@@ -30,6 +30,7 @@ body {
 
 }
 
+
 main {
     padding: 80px 0 135px 0;
 }
@@ -125,8 +126,7 @@ footer {
     }
 
     .cabecalho-imagem {
-        width: 50px;
-        height: 40px;
+        display: none;
     }
 }
 
@@ -157,4 +157,5 @@ footer {
     .rodape p {
         font-size: 14px;
     }
+    
 }
