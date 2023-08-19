@@ -65,13 +65,15 @@
                     <img src="../img/brownie-btn.png" alt="" class="img-produto-avaliacao">
                 </button>
             </div>
-        
+            
             <label for="pedido">Carrinho:</label>
             <textarea name="message" id="pedido" rows="4" required readonly></textarea>
-    
+
             <label for="total">Valor Total:</label>
             <input type="text" name="total" id="total" readonly>
-    
+
+            <button type="button" class="btn-clear" onclick="limparCarrinho()">Limpar Carrinho</button>
+
             <button type="submit" class="btn-submit">Enviar Pedido</button>
         </form>
     </div>

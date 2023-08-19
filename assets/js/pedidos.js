@@ -1,6 +1,7 @@
 const submitButton = document.getElementById('submit-button');
 const thankYouMessage = document.getElementById('thank-you-message');
 const pedidoForm = document.getElementById('pedido-form');
+const btnClear = document.querySelector('.btn-clear');
 
 var botao1 = document.getElementById('botao1');
 var botao2 = document.getElementById('botao2');
@@ -42,15 +43,27 @@ function addToCart(productName) {
     }
 }
 
+function removeFromCart(productName) {
+    if (products[productName] && products[productName] > 0) {
+        products[productName]--;
+        updateMessage();
+    }
+}
+
+function limparCarrinho() {
+    products = {};
+    updateMessage();
+}
+
 function updateCartFromTextarea() {
-    products = {}; // Limpa a contagem atual de produtos
+    products = {}; 
     var lines = pedido.value.trim().split('\n');
 
     for (var line of lines) {
         var parts = line.split(' ');
-        var productName = parts.slice(0, -1).join(' '); // Junta as partes do nome do produto
-        var count = parseInt(parts[parts.length - 2]); // Pega a contagem
-        products[productName] = count; // Define a contagem no objeto de produtos
+        var productName = parts.slice(0, -1).join(' '); 
+        var count = parseInt(parts[parts.length - 2]); 
+        products[productName] = count; 
     }
 
     updateMessage();
@@ -70,11 +83,22 @@ function updateMessage() {
     totalField.value = 'R$ ' + total.toFixed(2);
 }
 
-
 submitButton.addEventListener('click', () => {
-    // Simula o envio do pedido
     setTimeout(() => {
         pedidoForm.style.display = 'none';
         thankYouMessage.style.display = 'block';
-    }, 1000); // Tempo de simulação em milissegundos (1 segundo)
+    }, 1000); 
 });
+
+
+btnClear.addEventListener('click', limparCarrinho);
+
+for (var productName in prices) {
+    var removeButton = document.getElementById('remove-' + productName);
+    if (removeButton) {
+        removeButton.addEventListener('click', function () {
+            var productNameToRemove = this.getAttribute('data-product');
+            removeFromCart(productNameToRemove);
+        });
+    }
+}
