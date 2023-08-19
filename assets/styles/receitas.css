@@ -1,4 +1,3 @@
-/* Estilos globais */
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +6,6 @@ body {
     background-color: #FFD9DD;
 }
 
-/* Estilos do cabeçalho */
 .cabecalho {
     display: flex;
     align-items: center;
@@ -50,9 +48,7 @@ body {
     width: 120px;
     height: 120px;
     margin-bottom: 10px;
-    pointer-events: none;
-
-    
+    pointer-events: none;    
 }
 
 .ingredientes,
