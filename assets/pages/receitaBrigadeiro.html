@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Vendinha do Amálio</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/receitas.css">
+    <link rel="stylesheet" href="../styles/menu.css">
 </head>
 
 <body>
     <header class="cabecalho">
-        <div>
+        <div class="menu-div">
             <img src="../img/seedpr.png" alt="seedpr"  class="cabecalho-imagem">
+            <button class="nav-button" onclick="openNav()">
+                <i class="fa-solid fa-bars fa-2x" tabindex="7"></i>
+            </button>
         </div>
 
         <div>
@@ -25,13 +29,20 @@
 
         <nav class="cabecalho-nav">
             <ul class="lista-cabecalho">
-                <li><a href="https://felipecarusoo.github.io/feiraVendaDoceEmpreendedorismo/">INÍCIO</a></li>
-                <li class="none"><a href="https://felipecarusoo.github.io/feiraVendaDoceEmpreendedorismo/assets/pages/pedido.html">PEDIDOS</a></li>
-                <li><a href="https://felipecarusoo.github.io/feiraVendaDoceEmpreendedorismo/assets/pages/avaliacao.html">AVALIAÇÃO</a></li>
+                <li><a href="../../index.html">RECEITAS</a></li>
+                <li class="none"><a href="../pages/pedido.html">PEDIDOS</a></li>
+                <li><a href="../pages/avaliacao.html">AVALIAÇÃO</a></li>
             </ul>
         </nav>
     </header>
-    
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="../../index.html" onclick="closeNav()">Receitas</a>
+            <a href="../pages/pedido.html" onclick="closeNav()">Pedidos</a>
+            <a href="../pages/avaliacao.html" onclick="closeNav()">Avaliação</a>
+        </div>
+    </div>
     <div class="conteudo-receita">
         <h1 class="titulo-container">Receita de Brigadeiro</h1>
         <div class="receita-texto">
@@ -55,5 +66,7 @@
     <footer class="rodape">
         <p>Que a nossa doçura seja contagiante!</p>
     </footer>
+
+    <script src="../js/menu.js"></script>
 </body>
 </html>
