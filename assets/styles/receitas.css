@@ -45,10 +45,9 @@ body {
 }
 
 .img-produto-receita {
-    width: 120px;
-    height: 120px;
+    max-width: 100%;
+    height: auto;
     margin-bottom: 10px;
-    pointer-events: none;    
 }
 
 .ingredientes,
