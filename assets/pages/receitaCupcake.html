@@ -1,45 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/receitas.css">
+    <link rel="stylesheet" href="../styles/menu.css">
     <title>Vendinha do Amálio</title>
 </head>
-
 <body>
     <header class="cabecalho">
-        <div class="cabecalho-imagem">
-            <img src="assets/img/seedpr.png" alt="seedpr">
+        <div class="menu-div">
+            <img src="../img/seedpr.png" alt="seedpr" class="cabecalho-imagem">
+            <button class="nav-button" onclick="openNav()">
+                <i class="fa-solid fa-bars fa-2x" tabindex="7"></i>
+            </button>
         </div>
 
         <div>
-            <h1 class="titulo">Loja de Doces Colégio Estadual Prof. Amálio Pinheiro</h1>
+            <h1 class="titulo">Loja de Doces</h1>
         </div>
 
         <nav class="cabecalho-nav">
             <ul class="lista-cabecalho">
-                <li><a href="https://felipecarusoo.github.io/feiraVendaDoceEmpreendedorismo/">INÍCIO</a></li>
-                <li class="none"><a href="https://felipecarusoo.github.io/feiraVendaDoceEmpreendedorismo/assets/pages/pedido.html">PEDIDOS</a></li>
-                <li><a href="https://felipecarusoo.github.io/feiraVendaDoceEmpreendedorismo/assets/pages/avaliacao.html">AVALIAÇÃO</a></li>
+                <li><a href="../../index.html">RECEITAS</a></li>
+                <li class="none"><a href="../pages/pedido.html">PEDIDOS</a></li>
+                <li><a href="../pages/avaliacao.html">AVALIAÇÃO</a></li>
             </ul>
         </nav>
     </header>
-    
-    <div class="conteudo-receita">
-        <h1 class="titulo">Receita de Cupcake</h1>
-        <div class="receita-texto">
-            <!-- Detalhes da receita de cupcake aqui -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="../../index.html" onclick="closeNav()">Receitas</a>
+            <a href="../pages/pedido.html" onclick="closeNav()">Pedidos</a>
+            <a href="../pages/avaliacao.html" onclick="closeNav()">Avaliação</a>
         </div>
     </div>
-    
+    <main class="main">
+        <div class="conteudo-receita">
+            <h1 class="titulo-container">Receita de Brigadeiro</h1>
+            <div class="receita-texto">
+                            <img src="../img/cupcake.png" alt="" class="img-produto-receita">
+                        </div>
+                        <div class="ingredientes">
+                            <h2>Ingredientes:</h2>
+                            <ul>
+                                <li>1 lata de leite condensado</li>
+                                <li>2 colheres de sopa de chocolate em pó</li>
+                                <li>1 colher de sopa de manteiga</li>
+                            </ul>
+                        </div>
+                        <div class="modo-preparo">
+                            <h2>Modo de preparo:</h2>
+                            <ol>
+                                <li>Em uma panela, misture todos os ingredientes.</li>
+                                <li>Leve ao fogo baixo, mexendo sempre, até desprender do fundo da panela.</li>
+                                <li>Desligue o fogo e continue mexendo até a massa esfriar.</li>
+                                <li>Com as mãos untadas de manteiga, faça bolinhas e passe-as no granulado.</li>
+                                <li>Coloque as bolinhas em forminhas de papel.</li>
+                            </ol>
+            </div>
+        </div>
+    </main>
     <footer class="rodape">
         <p>Que a nossa doçura seja contagiante!</p>
     </footer>
+    <script src="../js/menu.js"></script>
 </body>
 </html>
