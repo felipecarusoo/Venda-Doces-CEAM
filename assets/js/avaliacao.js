@@ -1,22 +1,22 @@
-var botao1 = document.getElementById('botao1');
-var botao2 = document.getElementById('botao2');
-var botao3 = document.getElementById('botao3');
-var message = document.getElementById('message');
+var imgBrigadeiro = document.getElementById('imgBrigadeiro');
+var imgCupcake = document.getElementById('imgCupcake');
+var imgBrownie = document.getElementById('imgBrownie');
+var mensssagem = document.getElementById('mensssagem');
 var produto = document.getElementById('produto')
 
-botao1.addEventListener('click', function () {
+imgBrigadeiro.addEventListener('click', function () {
     if (!produto.value.includes('Brigadeiro ')) {
         produto.value += 'Brigadeiro \n';
     }
 });
 
-botao2.addEventListener('click', function () {
+imgCupcake.addEventListener('click', function () {
     if (!produto.value.includes('Cupcake ')) {
         produto.value += 'Cupcake \n';
     }
 });
 
-botao3.addEventListener('click', function () {
+imgBrownie.addEventListener('click', function () {
     if (!produto.value.includes('Brownie ')) {
         produto.value += 'Brownie \n';
     }

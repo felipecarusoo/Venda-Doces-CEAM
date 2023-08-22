@@ -122,6 +122,8 @@ footer {
     font-style: italic;
 }
 
+/* Estilos mobiles */
+
 @media screen and (max-width: 768px){
     .cabecalho-nav {
         display: none;
