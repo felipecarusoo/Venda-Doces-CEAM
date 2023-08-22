@@ -3,12 +3,12 @@ const thankYouMessage = document.getElementById('thank-you-message');
 const pedidoForm = document.getElementById('pedido-form');
 const btnClear = document.querySelector('.btn-clear');
 
-var botao1 = document.getElementById('botao1');
-var botao2 = document.getElementById('botao2');
-var botao3 = document.getElementById('botao3');
+var imgBrigadeiro = document.getElementById('imgBrigadeiro');
+var imgCupcake = document.getElementById('imgCupcake');
+var imgBrownie = document.getElementById('imgBrownie');
 var pedido = document.getElementById('pedido');
-var totalField = document.getElementById('total');
-var products = {};
+var totalPedido = document.getElementById('total');
+var produtos = {};
 var prices = {
     'brigadeiro': 1.00,
     'cupcake': 5.00,
@@ -16,15 +16,15 @@ var prices = {
 };
 var maxQuantity = 15;
 
-botao1.addEventListener('click', function () {
+imgBrigadeiro.addEventListener('click', function () {
     addToCart('brigadeiro');
 });
 
-botao2.addEventListener('click', function () {
+imgCupcake.addEventListener('click', function () {
     addToCart('cupcake');
 });
 
-botao3.addEventListener('click', function () {
+imgBrownie.addEventListener('click', function () {
     addToCart('brownie');
 });
 
@@ -33,37 +33,37 @@ pedido.addEventListener('input', function () {
 });
 
 function addToCart(productName) {
-    if (!products[productName]) {
-        products[productName] = 0;
+    if (!produtos[productName]) {
+        produtos[productName] = 0;
     }
 
-    if (products[productName] < maxQuantity) {
-        products[productName]++;
+    if (produtos[productName] < maxQuantity) {
+        produtos[productName]++;
         updateMessage();
     }
 }
 
 function removeFromCart(productName) {
-    if (products[productName] && products[productName] > 0) {
-        products[productName]--;
+    if (produtos[productName] && produtos[productName] > 0) {
+        produtos[productName]--;
         updateMessage();
     }
 }
 
 function limparCarrinho() {
-    products = {};
+    produtos = {};
     updateMessage();
 }
 
 function updateCartFromTextarea() {
-    products = {}; 
+    produtos = {}; 
     var lines = pedido.value.trim().split('\n');
 
     for (var line of lines) {
         var parts = line.split(' ');
         var productName = parts.slice(0, -1).join(' '); 
         var count = parseInt(parts[parts.length - 2]); 
-        products[productName] = count; 
+        produtos[productName] = count; 
     }
 
     updateMessage();
@@ -73,14 +73,14 @@ function updateMessage() {
     pedido.value = '';
     var total = 0;
 
-    for (var productName in products) {
-        var count = products[productName];
+    for (var productName in produtos) {
+        var count = produtos[productName];
         var price = prices[productName];
         pedido.value += productName + ' ' + count + 'x (' + (count * price).toFixed(2) + ')\n';
         total += count * price;
     }
 
-    totalField.value = 'R$ ' + total.toFixed(2);
+    totalPedido.value = 'R$ ' + total.toFixed(2);
 }
 
 submitButton.addEventListener('click', () => {
