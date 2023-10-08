@@ -22,7 +22,7 @@
             </button>
         </div>
 
-        <h1 class="titulo">Confeitaria Doçura de vida</h1>
+        <h1 class="titulo">Confeitaria Doçura de Vida</h1>
 
         <nav class="cabecalho-nav">
             <ul class="lista-cabecalho">
@@ -55,13 +55,13 @@
     
             <label for="produto">Selecione o Produto:</label>
             <div class="div-produto-avaliacao">
-                <button type="button" class="btn-produto-avaliacao" id="botao1" value="brigadeiro">
+                <button type="button" class="btn-produto-avaliacao" id="imgBrigadeiro">
                     <img src="../img/brigadeiro-btn.png" alt="" class="img-produto-avaliacao">
                 </button>
-                <button type="button" class="btn-produto-avaliacao" id="botao2">
+                <button type="button" class="btn-produto-avaliacao" id="imgCupcake">
                     <img src="../img/cupcake-btn.png" alt="" class="img-produto-avaliacao">
                 </button>
-                <button type="button" class="btn-produto-avaliacao" id="botao3">
+                <button type="button" class="btn-produto-avaliacao" id="imgBrownie">
                     <img src="../img/brownie-btn.png" alt="" class="img-produto-avaliacao">
                 </button>
             </div>
@@ -72,10 +72,11 @@
             <label for="total">Valor Total:</label>
             <input type="text" name="total" id="total" readonly>
 
-            <button type="button" class="btn-clear" onclick="limparCarrinho()">Limpar Carrinho</button>
+            <button type="button" class="btn-clear">Limpar Carrinho</button>
 
-            <button type="submit" class="btn-submit">Enviar Pedido</button>
+            <button type="submit" class="btn-submit" id="submit-button">Enviar Pedido</button>
         </form>
+        <div id="thank-you-message" style="display: none;">Obrigado pelo seu pedido!</div>
     </div>
     <script src="../js/menu.js"></script>
     <script src="../js/pedidos.js"></script>
