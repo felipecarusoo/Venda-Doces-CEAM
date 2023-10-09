@@ -23,7 +23,7 @@
         </div>
 
         <div>
-            <h1 class="titulo">Confeitaria Doçura de vida</h1>
+            <h1 class="titulo">Confeitaria Doçura de Vida</h1>
         </div>
 
         <nav class="cabecalho-nav">
@@ -58,19 +58,19 @@
 
             <label for="produto">Selecione o Produto:</label>
             <div class="div-produto-avaliacao">
-                <button type="button" class="btn-produto-avaliacao" id="botao1" value="brigadeiro">
+                <button type="button" class="btn-produto-avaliacao" id="imgBrigadeiro">
                     <img src="../img/brigadeiro-btn.png" alt="" class="img-produto-avaliacao">
                 </button>
-                <button type="button" class="btn-produto-avaliacao" id="botao2">
+                <button type="button" class="btn-produto-avaliacao" id="imgCupcake">
                     <img src="../img/cupcake-btn.png" alt="" class="img-produto-avaliacao">
                 </button>
-                <button type="button" class="btn-produto-avaliacao" id="botao3">
+                <button type="button" class="btn-produto-avaliacao" id="imgBrownie">
                     <img src="../img/brownie-btn.png" alt="" class="img-produto-avaliacao">
                 </button>
             </div>
 
             <label for="produto">Produto:</label>
-            <input type="text" name="produto" id="produto">
+            <input type="text" name="produto" id="produto" required>
 
             <p>Avaliação:</p>
             <div class="rating-buttons">
@@ -83,9 +83,8 @@
 
             <input type="hidden" name="avaliacao" id="avaliacao" value="">
 
-            <label for="comentario">Comentário:</label>
+            <label for="message">Comentário:</label>
             <textarea name="message" id="message" rows="4" required></textarea>
-
 
             <button type="submit" class="btn-submit">Enviar Avaliação</button>
         </form>
