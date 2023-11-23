@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">    
-    <title>Pedidos</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" type="text/css" href="../styles/pedidos.css">
     <link rel="stylesheet" href="../styles/menu.css">
 </head> 
@@ -22,38 +22,38 @@
             </button>
         </div>
 
-        <h1 class="titulo">Confeitaria Doçura de Vida</h1>
+        <h1 class="titulo">Doçura de vida Confectionary</h1>
 
         <nav class="cabecalho-nav">
             <ul class="lista-cabecalho">
-                <li><a href="../../index.html">RECEITAS</a></li>
-                <li class="none"><a href="pedido.html">PEDIDOS</a></li>
-                <li><a href="avaliacao.html">AVALIAÇÃO</a></li>
+                <li><a href="../../index.html">RECIPES</a></li>
+                <li class="none"><a href="pedido.html">ORDERS</a></li>
+                <li><a href="avaliacao.html">REVIEWS</a></li>
             </ul>
         </nav>
     </header>
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="../../index.html" onclick="closeNav()">Receitas</a>
-            <a href="pedido.html" onclick="closeNav()">Pedidos</a>
-            <a href="avaliacao.html" onclick="closeNav()">Avaliação</a>
+            <a href="../../index.html" onclick="closeNav()">RECIPES</a>
+            <a href="pedido.html" onclick="closeNav()">ORDERS</a>
+            <a href="avaliacao.html" onclick="closeNav()">REVIEWS</a>
         </div>
     </div>
     <div class="main">
-        <h1 class="titulo-container">Carrinho de Compras</h1>
+        <h1 class="titulo-container">Shopping Cart</h1>
 
         <form action="https://formsubmit.co/moura.tamires@escola.pr.gov.br" method="POST" id="pedido-form">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://felipecarusoo.github.io/feiraVendaDoceEmpreendedorismo/">
     
-            <label for="name">Seu nome:</label>
+            <label for="name">Your name:</label>
             <input type="text" name="name" id="name" required>
     
-            <label for="email">Seu email:</label>
+            <label for="email">Your email:</label>
             <input type="email" name="email" id="email" required>
     
-            <label for="produto">Selecione o Produto:</label>
+            <label for="produto">Select the product:</label>
             <div class="div-produto-avaliacao">
                 <button type="button" class="btn-produto-avaliacao" id="imgBrigadeiro">
                     <img src="../img/brigadeiro-btn.png" alt="" class="img-produto-avaliacao">
@@ -66,17 +66,17 @@
                 </button>
             </div>
             
-            <label for="pedido">Carrinho:</label>
+            <label for="pedido">Cart:</label>
             <textarea name="message" id="pedido" rows="4" required readonly></textarea>
 
-            <label for="total">Valor Total:</label>
+            <label for="total">Total value:</label>
             <input type="text" name="total" id="total" readonly>
 
-            <button type="button" class="btn-clear">Limpar Carrinho</button>
+            <button type="button" class="btn-clear">Clear cart</button>
 
-            <button type="submit" class="btn-submit" id="submit-button">Enviar Pedido</button>
+            <button type="submit" class="btn-submit" id="submit-button">Submit order</button>
         </form>
-        <div id="thank-you-message" style="display: none;">Obrigado pelo seu pedido!</div>
+        <div id="thank-you-message" style="display: none;">Thank you for your order!</div>
     </div>
     <script src="../js/menu.js"></script>
     <script src="../js/pedidos.js"></script>

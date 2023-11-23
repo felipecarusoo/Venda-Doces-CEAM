@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">    
     <link rel="stylesheet" type="text/css" href="../styles/avaliacao.css">
     <link rel="stylesheet" href="../styles/menu.css">
-    <title>Avaliação</title>
+    <title>Rate your product</title>
 </head>
 
 <body>
@@ -23,40 +23,40 @@
         </div>
 
         <div>
-            <h1 class="titulo">Confeitaria Doçura de Vida</h1>
+            <h1 class="titulo">Doçura de vida Confectionary</h1>
         </div>
 
         <nav class="cabecalho-nav">
             <ul class="lista-cabecalho">
-                <li><a href="../../index.html">RECEITAS</a></li>
-                <li class="none"><a href="pedido.html">PEDIDOS</a></li>
-                <li><a href="avaliacao.html">AVALIAÇÃO</a></li>
+                <li><a href="../../index.html">RECIPES</a></li>
+                <li class="none"><a href="pedido.html">ORDERS</a></li>
+                <li><a href="avaliacao.html">REVIEWS</a></li>
             </ul>
         </nav>
     </header>
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="../../index.html" onclick="closeNav()">Receitas</a>
-            <a href="pedido.html" onclick="closeNav()">Pedidos</a>
-            <a href="avaliacao.html" onclick="closeNav()">Avaliação</a>
+            <a href="../../index.html" onclick="closeNav()">RECIPES</a>
+            <a href="pedido.html" onclick="closeNav()">ORDERS</a>
+            <a href="avaliacao.html" onclick="closeNav()">REVIEWS</a>
         </div>
     </div>
     <main class="main">
-        <h1 class="titulo-container">Avalie seu Produto</h1>
+        <h1 class="titulo-container">Rate your product</h1>
 
         <form action="https://formsubmit.co/moura.tamires@escola.pr.gov.br" method="POST">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_autoresponse" value="Agradecemos sua avaliação!">
             <input type="hidden" name="_next" value="https://felipecarusoo.github.io/feiraVendaDoceEmpreendedorismo/">
 
-            <label for="name">Seu nome:</label>
+            <label for="name">Your name:</label>
             <input type="text" name="name" id="name" required>
 
-            <label for="email">Seu email:</label>
+            <label for="email">Your email:</label>
             <input type="email" name="email" id="email" required>
 
-            <label for="produto">Selecione o Produto:</label>
+            <label for="produto">Select the product:</label>
             <div class="div-produto-avaliacao">
                 <button type="button" class="btn-produto-avaliacao" id="imgBrigadeiro">
                     <img src="../img/brigadeiro-btn.png" alt="" class="img-produto-avaliacao">
@@ -69,10 +69,10 @@
                 </button>
             </div>
 
-            <label for="produto">Produto:</label>
+            <label for="produto">Product:</label>
             <input type="text" name="produto" id="produto" required>
 
-            <p>Avaliação:</p>
+            <p>Rating:</p>
             <div class="rating-buttons">
                 <button type="button" class="rating-button" value="1" id="1">1</button>
                 <button type="button" class="rating-button" value="2" id="2">2</button>
@@ -83,10 +83,10 @@
 
             <input type="hidden" name="avaliacao" id="avaliacao" value="">
 
-            <label for="message">Comentário:</label>
+            <label for="message">Comment:</label>
             <textarea name="message" id="message" rows="4" required></textarea>
 
-            <button type="submit" class="btn-submit">Enviar Avaliação</button>
+            <button type="submit" class="btn-submit">Submit rating</button>
         </form>
     </main>
 

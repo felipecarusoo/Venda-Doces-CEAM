@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,73 +14,77 @@
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="stylesheet" href="assets/styles/menu.css">
-    <title>Confeitaria Doçura de vida</title>
-</head> 
+    <title>Doçura de vida Confectionary</title>
+</head>
 
 <body>
     <header class="cabecalho">
         <div class="menu-div">
-            <img src="assets/img/seedpr.png" alt="seedpr"  class="cabecalho-imagem">
+            <img src="assets/img/seedpr.png" alt="seedpr" class="cabecalho-imagem">
             <button class="nav-button" onclick="openNav()">
                 <i class="fa-solid fa-bars fa-2x" tabindex="7"></i>
             </button>
         </div>
 
-        <h1 class="titulo">Confeitaria Doçura de vida</h1>
-        
+        <h1 class="titulo">Doçura de vida Confectionary</h1>
+
         <nav class="cabecalho-nav">
             <ul class="lista-cabecalho">
-                <li><a href="index.html">RECEITAS</a></li>
-                <li class="none"><a href="assets/pages/pedido.html">PEDIDOS</a></li>
-                <li><a href="assets/pages/avaliacao.html">AVALIAÇÃO</a></li>
+                <li><a href="index.html">RECIPES</a></li>
+                <li class="none"><a href="assets/pages/pedido.html">ORDERS</a></li>
+                <li><a href="assets/pages/avaliacao.html">REVIEWS</a></li>
             </ul>
         </nav>
     </header>
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="index.html" onclick="closeNav()">Receitas</a>
-            <a href="assets/pages/pedido.html" onclick="closeNav()">Pedidos</a>
-            <a href="assets/pages/avaliacao.html" onclick="closeNav()">Avaliação</a>
+            <a href="index.html" onclick="closeNav()">RECIPES</a>
+            <a href="assets/pages/pedido.html" onclick="closeNav()">ORDERS</a>
+            <a href="assets/pages/avaliacao.html" onclick="closeNav()">REVIEWS</a>
         </div>
     </div>
     <main>
-        <h1 class="titulo-container">Conheça nossas receitas</h1>
+        <h1 class="titulo-container">Explore our recipes</h1>
 
         <div class="Container">
             <div class="Box">
                 <div class="ImgBox">
-                    <img src="assets/img/brigadeiro.png" alt="Brigadeiro"> 
+                    <img src="assets/img/brigadeiro.png" alt="Brigadeiro">
                 </div>
                 <div>
-                    <a href="assets/pages/receitaBrigadeiro.html"><img src="assets/img/receita.png" class="icone" alt="Clique Aqui"></a>
+                    <a href="assets/pages/receitaBrigadeiro.html"><img src="assets/img/receita.png" class="icone"
+                            alt="Clique Aqui"></a>
                 </div>
-            </div> 
-            
+            </div>
+
             <div class="Box">
                 <div class="ImgBox">
-                    <img src="assets/img/cupcake.png" alt="Cupecake"> 
+                    <img src="assets/img/cupcake.png" alt="Cupecake">
                 </div>
                 <div>
-                    <a href="assets/pages/receitaCupcake.html"><img src="assets/img/receita.png" class="icone" alt="Clique Aqui"></a>
+                    <a href="assets/pages/receitaCupcake.html"><img src="assets/img/receita.png" class="icone"
+                            alt="Clique Aqui"></a>
                 </div>
-            </div> 
-            
+            </div>
+
             <div class="Box">
                 <div class="ImgBox">
-                    <img src="assets/img/brownie.png" alt="Brownie"> 
+                    <img src="assets/img/brownie.png" alt="Brownie">
                 </div>
                 <div>
-                    <a href="assets/pages/receitaBrownie.html"><img src="assets/img/receita.png" class="icone" alt="Clique Aqui"></a>
+                    <a href="assets/pages/receitaBrownie.html"><img src="assets/img/receita.png" class="icone"
+                            alt="Clique Aqui"></a>
                 </div>
-            </div> 
-        </div> 
+            </div>
+        </div>
     </main>
-    
+
     <footer class="rodape">
-        <p>Que a nossa doçura seja contagiante!</p>
+        <p>May our sweetness be contagious!</p>
     </footer>
 
     <script src="assets/js/menu.js"></script>
 </body>
+
 </html>
